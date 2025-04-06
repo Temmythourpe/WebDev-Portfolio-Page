@@ -171,9 +171,19 @@ section {
 
 .section__pic-container {
   display: flex;
+  justify-content: center; /* Centering the image */
+  align-items: center;
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.section__pic-container img {
+  width: 100%;         /* Make sure the image takes up the container's width */
+  height: 100%;        /* Make sure the image takes up the container's height */
+  border-radius: 50%;  /* This makes the image circular */
+  object-fit: cover;   /* Ensures the image is cropped appropriately */
+  border: 5px solid #fff; /* Optional: Adds a border around the circle */
 }
 
 .section__text {
@@ -288,6 +298,7 @@ section {
 }
 
 .arrow {
+  cursor: pointer;
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
@@ -321,8 +332,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(11, 13, 14);
-  background: white;
+  color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -332,27 +342,6 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-/* BOUNCE ANIMATION */
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-  animation: bounce 2s infinite; /* 👈 Bouncing effect */
 }
 
 .article-container {
@@ -373,6 +362,14 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+#experience .arrow {
+  position: absolute;
+  right: -3rem;
+  bottom: 2.5rem;
+  z-index: 10;
+  cursor: pointer;
 }
 
 /* PROJECTS SECTION */
@@ -400,6 +397,41 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.projects-scroll-wrapper {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 2rem;
+}
+
+.projects-container {
+  display: flex;
+  gap: 2rem;
+  scroll-snap-align: start;
+  padding: 1rem 0;
+  min-width: 100%;
+}
+
+.details-container {
+  flex: 0 0 48%; /* Show two at a time (roughly) */
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Scrollbar hidden for clean look */
+.projects-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.projects-scroll-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* CONTACT */
