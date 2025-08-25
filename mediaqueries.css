@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    height: 80vh;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -12,7 +12,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   #desktop-nav {
     display: none;
   }
@@ -21,7 +21,7 @@
   }
   #experience,
   .experience-details-container {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   #profile,
   .section-container {
@@ -38,9 +38,9 @@
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto 10rem;
   }
   .about-containers {
     margin-top: 0;
@@ -95,7 +95,7 @@
     font-size: 1.25rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .text-container {
     text-align: justify;

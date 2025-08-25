@@ -165,13 +165,13 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  gap: 9rem;
+  height: 96vh;
 }
 
 .section__pic-container img {
-  width: 250px; /* Adjust the size as needed */
-  height: 250px; /* Ensure the height matches the width */
+  width: 350px; /* Adjust the size as needed */
+  height: 350px; /* Ensure the height matches the width */
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image fits within the circle */
 }
@@ -182,7 +182,7 @@ section {
 }
 
 .section__text p {
-  font-weight: 600;
+  font-weight: 1200;
 }
 
 .section__text__p1 {
@@ -190,8 +190,8 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .title {
@@ -378,6 +378,21 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+/* Tools Container */
+.tools-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Tool Icons */
+.tool-icon {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  object-fit: contain;
 }
 
 /* CONTACT */
