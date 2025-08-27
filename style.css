@@ -352,7 +352,29 @@ article {
 article .icon {
   cursor: default;
 }
+/* Bounce / vibrate animation */
+.icon:hover {
+  animation: bounce 0.6s infinite;
+}
 
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-5px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-3px); }
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #555;
+}
+
+.arrow {
+  margin-top: 40px;
+  width: 40px;
+  cursor: pointer;
+}
 /* PROJECTS SECTION */
 
 #projects {
@@ -444,4 +466,74 @@ footer {
 
 footer p {
   text-align: center;
+}
+/* Flashing / glowing animation for section titles */
+.experience-sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: flash 2s infinite alternate;
+}
+
+/* Keyframes for smooth flashing */
+@keyframes flash {
+  0% {
+    color: #444;
+    text-shadow: none;
+  }
+  50% {
+    color: #ffc400;
+      
+  }
+  100% {
+    color: #444;
+    text-shadow: none;
+  }
+}
+/* Container glow animation */
+.details-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 420px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Pseudo-element for animated border ring */
+.details-container::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background: linear-gradient(90deg, #c6cdd5, rgb(225, 237, 161), #0ff, #007bff);
+  background-size: 300% 300%;
+  z-index: -1;
+  animation: glowRing 3s linear infinite;
+}
+
+/* Animate the gradient around the frame */
+@keyframes glowRing {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Optional: hover scale effect for interactivity */
+.details-container:hover {
+  transform: translateY(-5px);
 }
