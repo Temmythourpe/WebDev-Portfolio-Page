@@ -1,56 +1,45 @@
 /* GENERAL */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Poppins", sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 p {
   color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
 }
-
 nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
 }
-
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
 }
-
 a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
 }
-
 a:hover {
   color: grey;
   text-decoration: underline;
@@ -533,7 +522,76 @@ footer p {
   }
 }
 
-/* Optional: hover scale effect for interactivity */
-.details-container:hover {
-  transform: translateY(-5px);
+/* Container */
+.projects-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 450px; /* enough for screenshots */
+  margin: auto;
+  overflow: hidden;
 }
+
+/* Each Slide */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: slideShow 18s infinite;
+}
+
+/* Project Card */
+.project-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.project-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-title {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.project-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: #9c33cc;
+  color: #f4eff8;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* Keyframes for sliding */
+@keyframes slideShow {
+  0%   { left: 100%; opacity: 0; }
+  5%   { left: 0; opacity: 1; }
+  30%  { left: 0; opacity: 1; }
+  35%  { left: -100%; opacity: 0; }
+  100% { left: -100%; opacity: 0; }
+}
+
+/* Timing for each slide */
+.slide:nth-child(1) { animation-delay: 4s; }
+.slide:nth-child(2) { animation-delay: 10s; }
+.slide:nth-child(3) { animation-delay: 16s; }
+
+
