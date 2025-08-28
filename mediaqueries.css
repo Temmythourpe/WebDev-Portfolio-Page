@@ -10,9 +10,21 @@
   #projects {
     height: fit-content;
   }
+
+  /* ✅ Keep carousel centered and limited in width */
+  .projects-carousel {
+    max-width: 90%;
+  }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1024px) {
+  /* ✅ Show only 1 project per slide on tablets */
+  .project-frame {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   #desktop-nav {
     display: none;
   }
@@ -44,6 +56,11 @@
   }
   .about-containers {
     margin-top: 0;
+  }
+
+  /* ✅ Ensure project carousel adapts */
+  .projects-carousel {
+    max-width: 100%;
   }
 }
 
@@ -99,5 +116,10 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  /* ✅ On phones, 1 project per slide */
+  .project-frame {
+    min-width: 100%;
   }
 }
