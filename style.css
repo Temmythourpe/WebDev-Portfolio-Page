@@ -531,7 +531,7 @@ footer p {
   margin: auto;
   overflow: hidden;
 }
-<<<<<<< HEAD
+
 /* Grid Layout */
 .projects-grid {
   display: grid;
@@ -539,7 +539,6 @@ footer p {
   gap: 2rem;
   max-width: 1200px;
   margin: auto;
-=======
 
 /* Each Slide */
 .slide {
@@ -555,7 +554,6 @@ footer p {
   box-sizing: border-box;
   opacity: 0;
   animation: slideShow 18s infinite;
->>>>>>> 22853f769a8b4eac2ba684f87f4ad6bf201eb3b5
 }
 
 /* Project Card */
@@ -565,54 +563,41 @@ footer p {
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
-<<<<<<< HEAD
   transform: translateX(100%);
   opacity: 0;
   animation: slideIn 0.8s forwards;
-=======
->>>>>>> 22853f769a8b4eac2ba684f87f4ad6bf201eb3b5
 }
 
 .project-img {
   width: 100%;
-<<<<<<< HEAD
   height: 350px; /* big enough for desktop screenshots */
-=======
   height: 320px;
->>>>>>> 22853f769a8b4eac2ba684f87f4ad6bf201eb3b5
   object-fit: cover;
   border-radius: 10px;
 }
 
 .project-title {
   margin: 1rem 0;
-<<<<<<< HEAD
   font-size: 1.5rem;
-=======
   font-size: 1.4rem;
->>>>>>> 22853f769a8b4eac2ba684f87f4ad6bf201eb3b5
   font-weight: bold;
 }
 
 .project-btn {
-<<<<<<< HEAD
   margin-top: 0.5rem;
   padding: 0.6rem 1.2rem;
   border: none;
   background: #007acc;
   color: white;
-=======
   padding: 0.6rem 1.2rem;
   border: none;
   background: #9c33cc;
   color: #f4eff8;
->>>>>>> 22853f769a8b4eac2ba684f87f4ad6bf201eb3b5
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
-<<<<<<< HEAD
 
 .project-btn:hover {
   background: #005a99;
@@ -666,5 +651,3 @@ footer p {
 .slide:nth-child(2) { animation-delay: 10s; }
 .slide:nth-child(3) { animation-delay: 16s; }
 
-
->>>>>>> 22853f769a8b4eac2ba684f87f4ad6bf201eb3b5
