@@ -1,0 +1,39 @@
+import Link from "next/link";
+
+export default function Footer() {
+  const links = [
+    {
+      name: "About",
+      href: "#About",
+    },
+    {
+      name: "Experience",
+      href: "#Experience",
+    },
+    {
+      name: "Projects",
+      href: "#Projects",
+    },
+    {
+      name: "Contact",
+      href: "#Contact",
+    },
+  ];
+  return (
+    <>
+      <div className="py-10">
+        <ul className="flex justify-center gap-8 mb-2 text-[24px] font-[500] text-black">
+          {links.map((link) => (
+            <li key={link.name} className="flex items-center gap-1">
+              <div className="w-2 h-2 rounded-full bg-primary"></div>
+              <Link href={link.href}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
+        <p className="text-center text-[14px] text-[#344054]">
+          Copyright © 2025 Adeyemi Temitope Adejare. All Rights Reserved.
+        </p>
+      </div>
+    </>
+  );
+}
