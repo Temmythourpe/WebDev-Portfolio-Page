@@ -29,7 +29,7 @@ export default function Hero() {
           height={35}
           className="absolute md:left-[23rem] md:bottom-[-2rem]"
         />
-        <Badge className="bg-transparent text-[18px] px-4 rounded-full border-[1px] border-black text-black font-[400] mx-auto block ">
+        <Badge className="bg-transparent text-[18px] px-4 rounded-full border-[1px] dark:border-white dark:text-white border-black text-black font-[400] mx-auto block ">
           Hello!
         </Badge>
         <div>
@@ -53,7 +53,7 @@ export default function Hero() {
             height={20}
             className="pb-3"
           />
-          <p className="font-[500] text-[#344054]">
+          <p className="font-[500] text-gray-700 dark:text-gray-300">
             Adeyemi’s outstanding IT administration
             <br /> kept our systems running smoothly
             <br /> and securely.

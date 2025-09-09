@@ -3,7 +3,7 @@ import { GraduationCap, Award } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="bg-[#F2F4F7] pb-20">
+    <section id="about" className="bg-gray-50 dark:bg-gray-900 pb-20">
       <div className="relative w-full h-[80vh] ">
         <div className="flex flex-col items-center justify-center w-9/12 h-full mx-auto">
           <div className="flex items-center justify-center ">
@@ -17,10 +17,10 @@ export default function About() {
               />
             </div>
             <div>
-              <h1 className="text-[#344054] font-semibold text-4xl pb-2">
+              <h1 className="text-gray-800 dark:text-gray-100 font-semibold text-4xl pb-2">
                 About<span className="text-primary"> Me</span>
               </h1>
-              <p className="grid gap-4 text-[#344054]">
+              <p className="grid gap-4 text-gray-700 dark:text-gray-300">
                 <span>
                   My journey into IT began not with a job title, but with a
                   mindset to solve, support, innovate, and simplify. Over the
@@ -44,8 +44,8 @@ export default function About() {
         </div>
       </div>
 
-      <div className="grid w-10/12 grid-cols-2 gap-5 mx-auto text-[#344054]">
-        <div className="border-[1px] border-[#344054] rounded-3xl py-10">
+      <div className="grid w-10/12 grid-cols-2 gap-5 mx-auto text-gray-800 dark:text-gray-100">
+        <div className="border-[1px] border-gray-400 dark:border-gray-600 rounded-3xl py-10 bg-white dark:bg-gray-800">
           <div className="flex flex-col items-center justify-center h-full">
             <Award className="block mx-auto font-bold" />
             <h1 className="font-semibold text-[20px] text-center">
@@ -54,7 +54,7 @@ export default function About() {
             <p className="text-center">IT Support</p>
           </div>
         </div>
-        <div className="border-[1px] border-[#344054] rounded-3xl py-10">
+        <div className="border-[1px] border-gray-400 dark:border-gray-600 rounded-3xl py-10 bg-white dark:bg-gray-800">
           <GraduationCap className="block mx-auto font-bold" />
           <h1 className="font-semibold text-[20px] text-center">Education</h1>
           <p className="text-center">Diploma Cyber Security</p>

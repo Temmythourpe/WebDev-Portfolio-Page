@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="block w-6/12 py-10 pb-5 mx-auto">
-        <h1 className="text-[#344054] font-semibold text-5xl text-center pb-8">
+        <h1 className="text-gray-800 dark:text-gray-100 font-semibold text-5xl text-center pb-8">
           Have an Awesome Project idea?{" "}
           <span className="text-primary">Let's Discuss</span>
         </h1>
@@ -18,7 +18,7 @@ export default function Contact() {
             </div>
             <Link
               href="mailto:temmythourpe1907@gmail.com"
-              className="text-[#344054] font-[500] text-[16px]"
+              className="text-gray-800 dark:text-gray-100 font-[500] text-[16px]"
             >
               temmythourpe1907@gmail.com
             </Link>
@@ -29,7 +29,7 @@ export default function Contact() {
             </div>
             <Link
               href="https://www.linkedin.com/in/adeyemi-temitope-a-2019432a6/"
-              className="text-[#344054] font-[500] text-[16px]"
+              className="text-gray-800 dark:text-gray-100 font-[500] text-[16px]"
             >
               Adeyemi Temitope A.
             </Link>

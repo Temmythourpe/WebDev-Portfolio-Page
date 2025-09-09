@@ -62,10 +62,13 @@ export default function Projects() {
     },
   ];
   return (
-    <section className="bg-[#F2F4F7] w-full py-20 mb-10" id="projects">
+    <section
+      className="bg-gray-50 dark:bg-gray-900 w-full py-20 mb-10"
+      id="projects"
+    >
       <div className="w-11/12 mx-auto">
         <div className="flex items-center justify-between">
-          <h1 className="text-4xl font-semibold text-[#344054] ">
+          <h1 className="text-4xl font-semibold text-gray-800 dark:text-gray-100">
             Let's have a look at
             <br />
             my <span className="text-primary">Projects</span>
@@ -141,7 +144,7 @@ export default function Projects() {
         </div>
 
         <div>
-          <h1 className="text-4xl font-semibold text-[#344054] mb-4 text-center transition-all duration-500">
+          <h1 className="text-4xl font-semibold text-gray-800 dark:text-gray-100 mb-4 text-center transition-all duration-500">
             {projectList[currentProject].topic}
           </h1>
           <p className="text-lg text-[#667085] leading-relaxed text-center w-6/12 mx-auto text-[14px] transition-all duration-500">

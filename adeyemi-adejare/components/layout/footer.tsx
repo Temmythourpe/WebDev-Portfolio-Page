@@ -22,7 +22,7 @@ export default function Footer() {
   return (
     <>
       <div className="py-10">
-        <ul className="flex justify-center gap-8 mb-2 text-[24px] font-[500] text-black">
+        <ul className="flex justify-center gap-8 mb-2 text-[24px] font-[500] dark:text-white text-black">
           {links.map((link) => (
             <li key={link.name} className="flex items-center gap-1">
               <div className="w-2 h-2 rounded-full bg-primary"></div>
@@ -30,7 +30,7 @@ export default function Footer() {
             </li>
           ))}
         </ul>
-        <p className="text-center text-[14px] text-[#344054]">
+        <p className="text-center text-[14px] text-gray-600 dark:text-gray-400">
           Copyright © 2025 Adeyemi Temitope Adejare. All Rights Reserved.
         </p>
       </div>

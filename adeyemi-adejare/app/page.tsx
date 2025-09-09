@@ -5,6 +5,7 @@ import About from "@/components/landing_page/about";
 import Contact from "@/components/landing_page/contact";
 import Projects from "@/components/landing_page/projects";
 import Experience from "@/components/landing_page/experience";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Projects />
       <Contact />
       <Footer />
+      <ThemeToggle />
     </div>
   );
 }
